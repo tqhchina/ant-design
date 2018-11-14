@@ -9,8 +9,8 @@ function camelCase(name) {
 // Just import style for https://github.com/ant-design/ant-design/issues/3745
 const req = require.context('./components', true, /^\.\/[^_][\w-]+\/style\/index\.tsx?$/);
 
-req.keys().forEach((mod) => {
-  let v = req(mod);
+req.keys().forEach((mod) => { 
+  let v = req(mod) ;
   if (v && v.default) {
     v = v.default;
   }
